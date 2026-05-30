@@ -1,3 +1,4 @@
+![masks](https://i.imgur.com/yOri18g.png)
 # SAM Fine-Tuning for Medical Polyp Segmentation
 
 ## Overview
