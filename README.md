@@ -29,6 +29,7 @@ To execute this pipeline, a Python environment with the following dependencies i
 
 *Note: A CUDA-enabled GPU is highly recommended for the training loop and real-time interactive inference.*
 
+![gradio](https://i.imgur.com/x6ensJ9.png)
 ## Usage
 The entire workflow is self-contained within a single Jupyter Notebook.
 1. Clone the repository and install the required dependencies.
