@@ -2,7 +2,7 @@
 # SAM Fine-Tuning for Medical Polyp Segmentation
 
 ## Overview
-This repository contains a Jupyter Notebook implementing a fine-tuning pipeline for Meta's Segment Anything Model (SAM), adapting it for colonoscopy polyp segmentation. The project utilizes a resource-efficient training paradigm by freezing the computationally expensive Vision Transformer (ViT) image encoder and prompt encoder (`requires_grad=False`), restricting gradient updates exclusively to the lightweight mask decoder.
+This repository contains a Jupyter Notebook implementing a fine-tuning pipeline for Meta's Segment Anything Model (SAM), adapting it for colonoscopy polyp segmentation. The project utilizes a resource-efficient training paradigm by freezing the computationally expensive Vision Transformer (ViT) image encoder and prompt encoder (`torch.no_grad()`), restricting gradient updates exclusively to the lightweight mask decoder.
 
 ## Technical Architecture & Features
 * **Custom Data Pipeline:** Implements a PyTorch `Dataset` and `DataLoader` to handle SAM's strict input tensor formatting, including longest-edge scaling and zero-padding to `[3, 1024, 1024]`.
