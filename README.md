@@ -18,14 +18,17 @@ The project utilizes the **Kvasir-SEG** dataset. Images and corresponding GT mas
 
 ## Requirements
 To execute this pipeline, a Python environment with the following dependencies is required:
-* `torch`
-* `segment-anything`
+* `segment_anything`
 * `opencv-python`
+* `transformers`
 * `matplotlib`
-* `numpy`
-* `pandas`
+* `sklearn`
 * `gradio`
+* `pandas`
+* `numpy`
+* `torch`
 * `tqdm`
+* `PIL`
 
 *Note: A CUDA-enabled GPU is highly recommended for the training loop and real-time interactive inference.*
 
